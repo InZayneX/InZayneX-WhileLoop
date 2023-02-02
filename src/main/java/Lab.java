@@ -1,3 +1,4 @@
+import javax.xml.stream.events.EndDocument;
 
 public class Lab {
     /**
@@ -37,7 +38,45 @@ public class Lab {
         int i = 0;
 
 //        code here
+        while (i < end){
+            sum = sum + i;
+         //   end = i + 1;
+         //   System.out.println(i);
+            i++;
 
+            /* 
+             * i = 0 
+             * i <= 6
+             * sum = 0 + 0;
+             * sum = 0;
+             * 
+             * i++
+             * 
+             * i = 1
+             * 1 <= 6
+             * sum = 0 + 1
+             * sum = 1
+             * i++
+             * 
+             * i = 2
+             * 2 <= 6
+             * sum = 1 + 2
+             * sum = 3
+             * 
+             * i++
+             * 
+             * i = 3
+             * 3 <= 6
+             * sum = 3 + 3
+             * sum = 6
+             * ...
+             * 
+             * i = 6
+             * 6 <= 6
+             * sum = 15 + 6;
+             * sum = 21
+             */
+        }
         return sum;
     }
 }
